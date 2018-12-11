@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	height: 600px;
+	display: grid;
+	grid-template-rows:  1fr 1fr 1fr;
+  	grid-template-columns: 1fr 1fr 1fr;
+ 	grid-template-areas:
+ 	"blue yellow yellow"
+ 	"blue grey grey"
+ 	"blue grey grey"
+ }
+
+.blockblue {
+ 	grid-area: blue;
+ 	background-color: blue;
+}
+ 
+.blockyellow {
+ 	grid-area: yellow;
+ 	background-color: yellow;
+}
+
+.blockgrey {
+ 	grid-area: grey;
+ 	background-color: grey;
+}
+
